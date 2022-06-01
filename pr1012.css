@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: #606c38;
+    width: 100%;
+}
+
+
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header li{
+    width: 100%;
+    background-color: #fefae0;
+}
+
+header li:hover a{
+    background-color: rgba(0, 0, 0 ,0.2);
+}
+
+header li a{
+    display: block;
+    color: #283618;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;    
+}
+
+section{
+    height: 500px;
+    padding: 50px 15px;
+    box-sizing: border-box;
+}
+
+.s1{
+    background-image: url("images/cat_1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.s2{
+    background-image: url("images/cat_2.jpg");
+    background-size: cover;
+}
+
+.s3{
+    background-image: url("images/cat_3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.s4{
+    background-image: url("images/cat_4.jpg");
+    background-size: cover;
+}
+
+section div{
+    padding: 50px;
+    border-radius: 10px;
+    background-color: rgba(254, 250, 224 ,0.8);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+section h2{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Noto Serif TC', serif;
+}
+section P{
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+}
+
+#gototop{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: -50px;
+    bottom: 20px;
+    background-color: rgba(254, 250, 224 ,0.8);
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 1s;
+}
+#gototop a{
+    color: #283618;
+    text-decoration: none;
+}
+#gototop:hover{
+    right: 0;
+}
+i{
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;   
+}
+
+/* 這是電腦版 */
+@media screen and (min-width:960px) {
+
+    .container{
+        width: 1140px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    header{
+        height: 80px;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        box-shadow: 0 3px 5px rgba(8, 8, 8, 0.5);
+    }
+
+    nav{
+        padding-top: 15px;
+
+    }
+
+    header ul{
+        height: 50px;
+
+    }
+
+    header li{
+        float: left;
+        width: 24%;
+        margin-right: 1%;
+        border-radius: 20px;
+    }
+
+    header a{
+        border-radius: 20px;
+    }
+
+    section{
+        height: 800px;
+        padding-top: 200px;
+        box-sizing: border-box;
+    }
+
+    section h2{
+        font-size: 32px;
+    }
+
+    section div{
+        padding: 50px 50px 100px 50px;
+        border-radius: 20px;
+    }
+
+    .s1{
+        padding-top: 280px;
+    }
+
+
+}
